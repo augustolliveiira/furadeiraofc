@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { useBottomOffset } from '@/hooks/useBottomOffset';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+
 import { CountdownTimer } from "@/components/CountdownTimer";
 import { StarRating } from "@/components/StarRating";
 import { ProductBadge } from "@/components/ProductBadge";
@@ -156,39 +156,37 @@ const Index = () => {
       <ProductCarousel />
 
       {/* Flash Sale Banner - Mobile */}
-      <div className="bg-orange-600 text-white px-4 py-3 mx-4 rounded-lg mt-4">
-        <div className="flex items-center justify-between text-sm">
-          <div className="flex items-center gap-2">
-            <Zap className="w-4 h-4" />
-            <span className="font-inter font-black text-sm tracking-wide">OFERTA RELÂMPAGO</span>
+        <div className="bg-orange-600 text-white px-4 py-3 mx-4 rounded-lg mt-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-baseline gap-1">
+              <span className="text-3xl font-extrabold leading-none">R$ 69</span>
+              <span className="text-xl font-bold">,00</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Zap className="w-4 h-4" />
+              <span className="uppercase text-xs font-black tracking-wide bg-white/10 border border-white/20 rounded px-2 py-1">
+                OFERTA RELÂMPAGO!
+              </span>
+            </div>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="text-xs">Termina em:</span>
-            <CountdownTimer />
+          <div className="mt-2 flex items-center justify-between text-xs">
+            <span className="opacity-90 line-through">R$ 199,99</span>
+            <div className="flex items-center gap-2">
+              <span className="bg-white/10 rounded px-2 py-1">Economize até 65%</span>
+              <span className="opacity-90">Termina em</span>
+              <CountdownTimer compact />
+            </div>
           </div>
         </div>
-      </div>
 
       {/* Product Info */}
       <div className="px-4 py-4">
-        <h1 className="text-xl font-bold text-gray-900 mb-3 leading-tight">
-          Kit de Furadeira Multifuncional 21V Recarregável com 2 Baterias Incluídas
-        </h1>
-        
-        {/* Price Section */}
-        <div className="mb-4">
-          <div className="flex items-center gap-2 mb-2">
-            <span className="text-sm text-gray-500 line-through">R$ 199,99</span>
-            <Badge variant="destructive" className="text-xs">65% OFF</Badge>
-          </div>
-          <div className="flex items-baseline gap-0.5">
-            <span className="text-3xl font-bold text-orange-600">R$ 69</span>
-            <span className="text-xl font-bold text-orange-600">,00</span>
-          </div>
-          <div className="bg-gradient-to-r from-pink-100 to-pink-50 border border-pink-200 rounded-lg px-3 py-2 mt-2">
+          <div className="bg-gradient-to-r from-pink-100 to-pink-50 border border-pink-200 rounded-lg px-3 py-2 mb-3">
             <p className="text-sm font-medium text-pink-700 text-center">Desconto exclusivo na primeira Compra</p>
           </div>
-        </div>
+          <h1 className="text-xl font-bold text-gray-900 mb-3 leading-tight">
+            Kit de Furadeira Multifuncional 21V Recarregável com 2 Baterias Incluídas
+          </h1>
 
         {/* Rating */}
         <div className="flex items-center gap-2 mb-4">
