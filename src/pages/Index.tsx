@@ -427,37 +427,37 @@ const Index = () => {
       <div style={{ height: ctaHeight }} aria-hidden="true"></div>
 
       {/* Footer */}
-      <footer ref={footerRef} className="bg-gray-900 text-white">
+      <footer ref={footerRef} className="bg-white text-gray-700 border-t border-gray-200">
         <div className="px-4 py-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
               <button 
                 onClick={() => setFooterModal("privacy")}
-                className="text-sm hover:text-orange-400 transition-colors"
+                className="text-sm text-gray-700 hover:text-gray-900 transition-colors"
               >
                 Política de Privacidade
               </button>
               <button 
                 onClick={() => setFooterModal("terms")}
-                className="text-sm hover:text-orange-400 transition-colors"
+                className="text-sm text-gray-700 hover:text-gray-900 transition-colors"
               >
                 Termos de Uso
               </button>
               <button 
                 onClick={() => setFooterModal("refund")}
-                className="text-sm hover:text-orange-400 transition-colors"
+                className="text-sm text-gray-700 hover:text-gray-900 transition-colors"
               >
                 Políticas de Reembolso
               </button>
               <button 
                 onClick={() => setFooterModal("shipping")}
-                className="text-sm hover:text-orange-400 transition-colors"
+                className="text-sm text-gray-700 hover:text-gray-900 transition-colors"
               >
                 Políticas de Envio
               </button>
               <button 
                 onClick={() => setFooterModal("contact")}
-                className="text-sm hover:text-orange-400 transition-colors"
+                className="text-sm text-gray-700 hover:text-gray-900 transition-colors"
               >
                 Fale Conosco
               </button>
@@ -466,8 +466,8 @@ const Index = () => {
         </div>
         
         {/* Legal Notice */}
-        <div className="px-4 py-6 bg-gray-800 border-t border-gray-700">
-          <p className="text-xs text-gray-400 text-center leading-relaxed">
+        <div className="px-4 py-6 bg-white border-t border-gray-200">
+          <p className="text-xs text-gray-600 text-center leading-relaxed">
             <strong>Aviso Legal:</strong> Esta página não faz parte ou está relacionada ao Kwai ou a Kuaishou Technology. 
             Além disso, este site NÃO é endossado pelo Kwai de forma alguma.
           </p>
