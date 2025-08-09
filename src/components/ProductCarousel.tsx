@@ -69,12 +69,6 @@ export const ProductCarousel = ({ className }: ProductCarouselProps) => {
                   className="w-full h-80 object-cover"
                   loading={index === 0 ? "eager" : "lazy"}
                 />
-                {index === 0 && (
-                  <div className="flex gap-2 mt-3 justify-center">
-                    <ProductBadge variant="offer">65% OFF</ProductBadge>
-                    <ProductBadge variant="free-shipping">FRETE GRÁTIS</ProductBadge>
-                  </div>
-                )}
               </div>
             </CarouselItem>
           ))}
