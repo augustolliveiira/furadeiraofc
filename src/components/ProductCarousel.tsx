@@ -66,7 +66,7 @@ export const ProductCarousel = ({ className }: ProductCarouselProps) => {
                 <img 
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-80 object-cover"
+                  className="w-full h-80 object-contain bg-white"
                   loading={index === 0 ? "eager" : "lazy"}
                 />
               </div>
