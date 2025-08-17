@@ -159,7 +159,7 @@ const Index = () => {
         <div className="bg-orange-600 text-white px-4 py-3 mx-4 rounded-lg mt-4">
           <div className="flex items-center justify-between">
             <div className="flex items-baseline gap-1">
-              <span className="text-3xl font-extrabold leading-none">R$ 69</span>
+              <span className="text-3xl font-extrabold leading-none">R$ 97</span>
               <span className="text-xl font-bold">,00</span>
             </div>
             <div className="flex items-center gap-2">
@@ -170,7 +170,7 @@ const Index = () => {
             </div>
           </div>
           <div className="mt-2 flex items-center justify-between text-xs">
-            <span className="opacity-90 line-through">R$ 199,99</span>
+            <span className="opacity-90 line-through">R$ 277,00</span>
             <div className="flex items-center gap-2">
               <span className="bg-white/10 rounded px-2 py-1">Economize até 65%</span>
               <span className="opacity-90">Termina em</span>
