@@ -170,7 +170,7 @@ const Index = () => {
             </div>
           </div>
           <div className="mt-2 flex items-center justify-between text-xs">
-            <span className="opacity-90 line-through">R$ 797,14</span>
+            <span className="opacity-90 line-through">R$ 199,99</span>
             <div className="flex items-center gap-2">
               <span className="bg-white/10 rounded px-2 py-1">Economize até 65%</span>
               <span className="opacity-90">Termina em</span>
