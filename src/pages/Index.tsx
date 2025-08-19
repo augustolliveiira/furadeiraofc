@@ -169,8 +169,10 @@ const Index = () => {
               </span>
             </div>
           </div>
-          <div className="mt-2 flex items-center justify-end text-xs">
+          <div className="mt-2 flex items-center justify-between text-xs">
+            <span className="opacity-90 line-through">R$ 797,14</span>
             <div className="flex items-center gap-2">
+              <span className="bg-white/10 rounded px-2 py-1">Economize até 65%</span>
               <span className="opacity-90">Termina em</span>
               <CountdownTimer compact />
             </div>
@@ -395,6 +397,7 @@ const Index = () => {
       <div ref={ctaRef} className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 z-40" style={{ marginBottom: isAtBottom ? footerHeight : 0, paddingBottom: 'env(safe-area-inset-bottom)' }}>
         <div className="flex items-center gap-2">
           <div className="flex-1">
+            <div className="text-xs text-gray-500 line-through">R$ 797,14</div>
             <div className="text-lg font-bold text-orange-600">R$ 279,00</div>
           </div>
           
