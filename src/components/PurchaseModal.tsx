@@ -11,7 +11,7 @@ interface PurchaseModalProps {
 
 export const PurchaseModal = ({ isOpen, onClose }: PurchaseModalProps) => {
   const [selectedVoltage, setSelectedVoltage] = useState<string>('Bivolt');
-  const checkoutBaseUrl = "https://pay.nitropaycheckout.com.br/checkout/fe123015-5a2e-490c-bdc9-b85f9beb6893";
+  const checkoutBaseUrl = "https://pagamentosegurobrazil.shop/checkout/b9a5c20e-dc1a-4c14-9903-1ff36a0ad62c";
 
   // Capturar UTMs quando o componente monta
   useEffect(() => {
